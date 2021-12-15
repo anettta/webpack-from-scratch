@@ -115,6 +115,14 @@ module.exports = {
 17. in terminal: npm install babel-loader
 
 17.1 in terminal: npm install sass-loader
+17.2 add to webpack-config file:
+      {
+        test: /\.sass$/,
+        use: {
+          // [sass-loader](/loaders/sass-loader)
+          loader: "sass-loader",
+        },
+      },
 
 18. yarn build
 
